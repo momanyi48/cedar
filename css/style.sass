@@ -1,7 +1,11 @@
 @import reset
-
+body
+  color: #222
+h1
+  font-size: 48px
+  line-height: 57px
 .header
-  background-image: url('file:///C:/Users/Samuel/Documents/GitHub/cedar/images/bg-zebra-street-dog.jpg')
+  background-image: url('file:///C:/Users/Samuel/Documents/GitHub/cedar/images/hero-three.jpg')
   background-size: cover
   background-color: #222
   width: 100%
@@ -10,6 +14,8 @@
   display: flex
   flex-direction: row
   justify-content: space-between
+  margin: 0 20px 0 20px
+  padding-top: 20px
 svg
   width: 20px
   height: 20px
@@ -17,4 +23,13 @@ svg
   .nav-bar
     flex-direction: column
 .hero
+  width: 500px
   margin-top: 150px
+  margin-left: 20px
+.subtitle
+  font-size: 28px
+  line-height: 32px
+@media screen and (max-width:768px)
+  .hero
+    width: auto
+    margin: 100px auto
